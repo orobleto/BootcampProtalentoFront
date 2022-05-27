@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div>
+        <form action="#">
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo" placeholder="usuario@dominio.ext" required="true"  />
+            <label for="clave">Clave</label>
+            <input type="password" name="clave" id="clave" placeholder="tu clave" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula. NO puede tener otros símbolos"/>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

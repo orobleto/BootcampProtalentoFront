@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+
+    
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+    <header style="border: 1px solid; background-color: blue;"> <!-- inline -->
+       <h1>titulo del encabezado</h1>
+    </header>
+
+    <nav style="font-size: 20px;">
+
+        Menu
+        <a href="https://www.google.com/search?q=octavio+robleto">Enlace</a>
+
+        <li>Listas</li>
+        <!--get  search (parametro String q) -->
+    </nav>
+
+    <section>
+        diferentes secciones
+
+    </section>
+    <h1>Buscar Post</h1>
+    <form action="https://jsonplaceholder.typicode.com/comments">
+
+        <input type="number" name="postId" />
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+    <br> <br> <br> <br> <br> <br> <br> <br>
+    <h1>Crear Post</h1>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <input type="number" name="id" /><br>
+        <input type="text" name="title" /><br>
+        <input type="text" name="body" /><br>
+        <input type="submit" value="Enviar">
+    </form>-- 201 redirige al index
+    <br> <br> <br> <br> <br> <br> <br> <br>
+    <!-- Por defecto es GET como metodo y por defecto es la misma URL como accion  -->
+    <!--
+    <form action="#" method="put"> -->
+    <!-- los input tienen hijos cuando trabajamos con framework-->
+    <!--por defecto los input son de tipo text -->
+    <input type="text" id="descripcion" name="descripcion" /> <br>
+    <input type="checkbox" name="activo" /> <br>
+    <input type="color" name="color" /> <br>
+    <input type="email" name="correo" /> <br>
+    <input type="password" name="clave" /> <br>
+    <input type="file" name="archivo" /> <br>
+    <input type="date" name="fecha" /> <br>
+    <input type="datetime-local" name="fechaHora" /> <br>
+    <input type="month" name="mes" /> <br>
+    <input type="week" name="semana" /> <br>
+    <input type="number" name="numero" /> <br>
+    <input type="time" name="hora" /> <br>
+    <input type="hidden" name="oculto" value="valorOculto" /> <br> <!-- Usuario = Activo  -->
+    <input type="url" name="url" /> <br>
+
+    <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+
+    </div>
+    </form>
+
+
+
+
+
+    <footer>
+        Pie
+
+    </footer>
+</body>
+
+</html>
