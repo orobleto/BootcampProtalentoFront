@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div id="CuerpoCalculadora">
+
+        <input type="text" id="operacion" placeholder="0" readonly /><br>
+        <input type="text" id="display" placeholder="0" readonly /><br>
+
+        <button onclick="setDisplay(this)">7</button>
+        <button onclick="setDisplay(this)">8</button>
+        <button onclick="setDisplay(this)">9</button>
+        <button onclick="setDisplay(this)">+</button>
+        <br>
+        <button onclick="setDisplay(this)">4</button>
+        <button onclick="setDisplay(this)">5</button>
+        <button onclick="setDisplay(this)">6</button>
+        <button onclick="setDisplay(this)">-</button>
+        <br>
+        <button onclick="setDisplay(this)">1</button>
+        <button onclick="setDisplay(this)">2</button>
+        <button onclick="setDisplay(this)">3</button>
+        <button onclick="setDisplay(this)">*</button>
+        <br>
+        <button onclick="setDisplay(this)">0</button>
+        <button onclick="limpiar()">C</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="setDisplay(this)">/</button>
+
+
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

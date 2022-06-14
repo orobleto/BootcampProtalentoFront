@@ -1,5 +1,10 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Rock+Salt&display=swap');
+body {
+    font-family: 'Rock Salt', cursive;
     background: white;
     padding: 10px;
     color: #2a3132;
@@ -45,4 +50,22 @@ footer{
     text-align: center;
     padding-top: 20px;
     background: #f2f2f2;
+}
+img{
+    padding: 0;
+    margin: 0;
+}
+
+
+p::after{
+    content: "🤳";
+}
+
+p::before{
+    content: "...";
+}
+
+p::first-line{
+    font-weight: bold;
+    font-size: 50px;
 }

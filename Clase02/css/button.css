@@ -1,0 +1,29 @@
+button{
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.warning {
+    background-color: orange;
+}
+
+
+.danger {
+    background-color: darkred;
+
+}
+
+.success {
+    background-color: #336b87;
+}
+
+button:hover{
+    background-color:azure ;
+    border-radius: 2px;
+    color: black;
+    font-weight: bold;
+}
+

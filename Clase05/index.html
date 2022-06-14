@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+</head>
+
+<body>
+    <div>
+        <input type="email" id="correo" name="correo" placeholder="tu correo"/>
+    </div>
+    <button onclick="validarCorreoInstitucional('correo','@educacionit.com')?alert('Bienvenido'):alert('debe poseer un correo institucional de educacionit')">Validar email</button>
+
+
+    <div>
+        <input type="text" onfocus="alert('Te colocaste en la caja de texto')" />
+    </div>
+    <div>
+        <input type="text" onkeypress="escribir('inputs','Tipeaste')" placeholder="Tipear"/>
+    </div>
+    <div>
+        <input type="text" onblur="alert('Saliste de la caja de texto')" />
+    </div>
+    <div>
+        <button onclick="escribir('texto','Hola desde una funcion en JS')">Presiona aca</button>
+    </div>
+
+    <div>
+        <h1 id="texto"></h1>
+    </div>
+
+    <div>
+        <h1 id="inputs"></h1>
+    </div>
+</body>
+
+<script>
+    
+    function escribir(id, texto) {
+        const elemento = document.getElementById(id);
+        elemento.innerText = texto;
+    }
+
+
+    function validarCorreoInstitucional(input,dominio) {
+        const correo = document.getElementById(input).value;
+        if (correo.endsWith(dominio)) {
+            return true;
+        }
+        return false;
+    }
+
+
+
+
+</script>
+
+<script src="scripts/main.js">
+
+
+</script>
+
+</html>

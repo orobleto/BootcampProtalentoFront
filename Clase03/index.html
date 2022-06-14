@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <h1>Hola</h1>
+    <script>
+
+        /*
+         Aqui hay un comentario
+        */
+
+        // tipado debil
+
+        //Tipos de Datos String numeros booleanos objetos undifined
+
+        // var let const 
+        let edad;
+        let numero1 = "Hola";
+        let numero2 = 6;
+        console.log(numero1 + numero2);
+        numero2 = true;
+        console.log(numero1 * numero2);
+        const numero3 = numero1 * numero2;
+        let nombre = '"';
+
+
+
+        //   alert("Hola Mundo");
+
+        // Operadores
+
+        // matematicos
+
+        //Jerarquia 
+        /*
+        ()
+        * /
+        + -
+        %        
+        */
+        console.log(5 + 5);
+        console.log(5 / 5);
+        console.log(5 - 5);
+        console.log(5 * 5);
+        console.log(5 % 5);
+
+        // Operadores relacionales > < >= <= != == === !==
+
+        variableA = 2;
+        variableB = '2';
+
+
+        //   alert(variableA===variableB);
+
+        // Operadores Logicos && || & |
+
+        console.log("-->" + (true || false));
+
+        // let curso = window.prompt('Indica el curso al que quieres ingresar',"Java");
+        //  let mayorEdad = window.confirm("Es mayor de edad?");
+
+        // Condicionales
+
+        const numA = window.prompt("Dame un numero A:");
+        const numB = window.prompt("Dame un numero B:");
+        const oper = window.prompt("Como quieres operar ( + , - , * , / ):");
+        let total = 0;
+        /* if (oper=='+') total = numA + numB; 
+ 
+         if (oper=='+') total = numA + numB; 
+         else total = numA - numB; */
+
+        if (oper == '+') {
+            total = +numA + (+numB);
+        } else if (oper == '-') {
+            total = numA - numB;
+        } else if (oper == '*') {
+            total = numA * numB;
+        } else if (oper == '/') {
+            total = numA / numB;
+        }
+        else {
+            total = 0;
+        }
+        alert("El total es:" + total);
+
+
+        console.log(2 === "2" ? "Son Iguales estrictamente" : "Son Diferentes estrictamente");
+
+        // 
+
+    </script>
+
+    <h1>Adios</h1>
+</body>
+
+</html>
