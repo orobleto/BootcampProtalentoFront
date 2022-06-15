@@ -1,6 +1,8 @@
 const display = document.getElementById("display");
+const operacion = document.getElementById("operacion");
 const longitudDisplay = 20;
 let calcule = 0;
+const operadores = ["+", "-", "*", "/"]
 
 function setDisplay(button) {
 
@@ -13,19 +15,30 @@ function setDisplay(button) {
     if (display.value.length < longitudDisplay && !(valor == 0 && display.value === "")) {
         display.value += valor;
     }
-    console.log(button.innerText);
+
+    //if (valor == '+' || valor == '-' || valor == '*' || valor == '/') {
+    if (operadores.indexOf(valor) != -1) {
+        operacion.value += display.value;
+        limpiar(false);
+    }
+
 }
 
 function calcular() {
-    const resultado = eval(display.value)
-    console.log(resultado);
-    display.value = resultado.toFixed(2);
+    operacion.value += display.value === "" ? 0 : display.value;
+    const resultado = eval(operacion.value);
+    display.value = resultado == "Infinity" || resultado == "-Infinity" ? "No se puede dividir por cero" : resultado.toFixed(2);
     calcule = true;
 }
 
-function limpiar() {
-    calcule = false;
+function limpiar(todo = true) {
     display.value = '';
+    if (todo === true) {
+        calcule = false;
+        operacion.value = '';
+    }
+
+
 }
 
 

@@ -1,4 +1,3 @@
-let a = 5;
-let b = 6;
+const operadores = ["+","-","*","/"]
 
-console.log("El resultado es: " + a + b);
+console.log(operadores.indexOf("9"));
